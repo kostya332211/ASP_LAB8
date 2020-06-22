@@ -1,0 +1,20 @@
+﻿@using StandardPhonesBook.Core.Entities
+@model IEnumerable<Person>
+
+@{
+    ViewBag.Title = "Main page";
+}
+
+<div>
+    <table border="2" width="50%">
+        <tr>
+            <th>Id</th>
+            <th>Имя</th>
+            <th>Телефон</th>
+        </tr>
+        @Html.Partial("Partial", Model);
+    </table>
+    <h2><a asp-action="Add">Add</a></h2>
+    <h2><a asp-action="Update">Update</a></h2>
+    <h2><a asp-action="Delete">Delete</a></h2>
+</div>

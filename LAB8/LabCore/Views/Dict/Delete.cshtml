@@ -1,0 +1,13 @@
+﻿@model LabCore.Models.PersonValidationModel
+@{
+    ViewBag.Title = "Delete Phone";
+}
+<div>
+    <form asp-action="DeleteSave">
+        <div>
+            <label asp-for="PhoneNumber"></label>
+            <input type="text" name="phone"/>
+        </div>
+        <input type="submit" />
+    </form>
+</div>

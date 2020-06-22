@@ -1,0 +1,19 @@
+﻿@model LabCore.Models.PersonValidationModel
+@{
+    ViewBag.Title = "Update Phone";
+}
+<div>
+    <form asp-action="UpdateSave">
+        <div>
+            <label asp-for="PersonName"></label>
+            <input type="text" asp-for="PersonName" />
+            <span style="color: red" asp-validation-for="PersonName"></span>
+        </div>
+        <div>
+            <label asp-for="PhoneNumber"></label>
+            <input type="text" asp-for="PhoneNumber" />
+            <span style="color: red" asp-validation-for="PhoneNumber"></span>
+        </div>
+        <input type="submit" />
+    </form>
+</div>

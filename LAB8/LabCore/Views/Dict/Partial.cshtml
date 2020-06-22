@@ -1,0 +1,11 @@
+﻿@using StandardPhonesBook.Core.Entities
+@model IEnumerable<Person>
+
+@foreach (var person in Model)
+{
+    <tr>
+        <th>@person.Id</th>
+        <th>@person.PersonName</th>
+        <th>@person.PhoneNumber</th>
+    </tr>
+}
